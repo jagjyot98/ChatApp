@@ -18,7 +18,6 @@ while 1:
     clientsocket.send(message)   # sending message to client after encoding
     print("Sent..", end="\n\n")
 
-    # max amount of data to be send
     msg = clientsocket.recv(1024)  # recieving messege from client
     msg = msg.decode()       # encoding of message after recieving from client to "utf-8" from binary
     # utf-8 is the form in which the recieved mssg should be converted to be displayed
